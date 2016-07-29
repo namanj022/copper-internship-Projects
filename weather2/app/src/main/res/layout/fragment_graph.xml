@@ -1,0 +1,27 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".graphFragment"
+    android:background="#ffffff">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="384dp"
+        android:layout_height="178dp" />
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="384dp"
+        android:layout_height="178dp"
+        android:layout_below="@+id/chart"/>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart2"
+        android:layout_width="384dp"
+        android:layout_height="178dp"
+        android:layout_below="@+id/chart1"/>
+
+
+</RelativeLayout>
+

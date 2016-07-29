@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    android:background=	"#00CED1"
+
+    >
+
+    <TextView
+        android:id="@+id/fwind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="wind"
+        android:textSize="20sp"
+        android:layout_below="@+id/fhumidity"
+        android:layout_alignLeft="@+id/fhumidity"
+        android:layout_alignStart="@+id/fhumidity" />
+    <TextView
+        android:id="@+id/fhumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="humidity"
+
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_below="@+id/ficon"
+        android:layout_alignLeft="@+id/fpresure"
+        android:layout_alignStart="@+id/fpresure" />
+    <TextView
+        android:id="@+id/fpresure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text="pressure"
+        android:layout_above="@+id/fhumidity"
+        android:layout_alignRight="@+id/fdate"
+        android:layout_alignEnd="@+id/fdate" />
+    <ImageView
+        android:id="@+id/ficon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="desc"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/ftemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="temp"
+        android:textSize="43sp"
+        android:layout_below="@+id/fdate"
+        android:layout_toRightOf="@+id/ficon"
+        android:layout_toEndOf="@+id/ficon" />
+
+    <TextView
+        android:id="@+id/fdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text="descc"
+        android:layout_alignLeft="@+id/ficon"
+        android:layout_alignStart="@+id/ficon"
+        android:layout_alignTop="@+id/fwind"
+        android:layout_alignRight="@+id/ficon"
+        android:layout_alignEnd="@+id/ficon">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/fdate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ficon"
+        android:background="@drawable/textborder"
+        android:paddingRight="3dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:text="date"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+     android:layout_marginBottom="-500dp">
+    <RelativeLayout
+        android:layout_width="385dp"
+        android:layout_height="70dp"
+        android:background="#fff"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="155dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:elegantTextHeight="false"
+            android:text="MUSIC LIBRARY"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/searchi"
+            android:id="@+id/imageView2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:ems="10"
+             android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:layout_toStartOf="@+id/imageView2">
+
+            <requestFocus />
+        </EditText>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:elevation="50dp"
+        android:id="@+id/toprelative"
+        android:background="#fff"
+        android:layout_below="@+id/song_list">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/relativeLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/start1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+               android:text="&#9654;"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/play"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:elegantTextHeight="false"
+                android:text="unknown"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:singleLine="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="500dp"
+                android:id="@+id/imageView3"
+                android:background="@drawable/musicicon"
+                android:layout_alignBottom="@+id/start1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/play"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/play" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/status"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:background="@drawable/musicico"
+            android:layout_gravity="center"
+            android:elegantTextHeight="false"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/status"
+            android:layout_alignStart="@+id/status"
+            android:layout_alignTop="@+id/stop"
+            android:layout_marginLeft="84dp"
+            android:layout_marginStart="84dp"
+            android:background="@drawable/button"
+            android:text="&#9654;"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/shuffle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/seekBar"
+            android:layout_alignLeft="@+id/stop"
+            android:layout_alignStart="@+id/stop"
+            android:layout_marginBottom="40dp"
+            android:alpha="0.1"
+            android:text="&#128256;"
+            android:textColor="#FF3300"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="36dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@+id/next1"
+            android:layout_toStartOf="@+id/next1"
+            android:background="@drawable/button"
+            android:text="&#9208;"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/next1"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/status"
+            android:layout_alignRight="@+id/status"
+            android:layout_alignTop="@+id/stop"
+            android:text="&#187;"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/pre1"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/status"
+            android:layout_alignStart="@+id/status"
+            android:layout_below="@+id/seekBar"
+            android:text="&#171;"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/start"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="45dp"
+            android:max="100"></SeekBar>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+       >
+
+    </ListView>
+
+</RelativeLayout>
+
+</RelativeLayout>

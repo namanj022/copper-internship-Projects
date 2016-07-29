@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EducationFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/grey"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/logo" />
+
+        <android.support.v7.widget.DialogTitle
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:text="CLASS 10th"
+            android:textAlignment="center"></android.support.v7.widget.DialogTitle>
+
+        <EditText
+            android:id="@+id/schoolname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#f3f3f3"
+            android:hint="School Name"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/percentage10"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:background="#f3f3f3"
+            android:hint="Percentage Or CGPA"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/board"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+
+            android:background="#f3f3f3"
+            android:hint="Board"
+            android:paddingLeft="5dp" />
+
+        <android.support.v7.widget.DialogTitle
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:text="CLASS 12th"
+            android:textAlignment="center"></android.support.v7.widget.DialogTitle>
+
+        <EditText
+            android:id="@+id/schoolname12"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="#f3f3f3"
+            android:hint="School Name"
+            android:paddingLeft="5dp" />
+        />
+
+
+        <EditText
+            android:id="@+id/percentage12"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+
+            android:background="#f3f3f3"
+            android:hint="Percantage"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/board12"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="#f3f3f3"
+            android:hint="Board"
+            android:paddingLeft="5dp" />
+
+
+        <Button
+            android:id="@+id/save1"
+            android:layout_width="190dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFF"
+            android:text="SAVE"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:onClick="checkEducation"
+
+            android:layout_marginBottom="50dp" />
+
+
+    </LinearLayout>
+</ScrollView>
+
+

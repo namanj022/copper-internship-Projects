@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    tools:context="com.survey.worklake.addmission.DisplayFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/personal"
+        android:background="#ECEFF1">
+        <android.support.v7.widget.DialogTitle
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:text="PERSONAL"
+            android:textAlignment="center"
+            android:id="@+id/personaltext"
+            ></android.support.v7.widget.DialogTitle>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/personaltext"
+            android:layout_margin="5dp"
+            android:id="@+id/personalEditText"
+            android:padding="10dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="&lt;"
+            android:id="@+id/back"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:textColor="@color/personal"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/personal"
+        android:id="@+id/parents"
+        android:background="#ECEFF1">
+        <android.support.v7.widget.DialogTitle
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:text="PARENTS"
+            android:textAlignment="center"
+            android:id="@+id/parentstext"
+            ></android.support.v7.widget.DialogTitle>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/parentstext"
+              android:layout_margin="5dp"
+            android:id="@+id/parentsEditText"
+            android:padding="10dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/education"
+        android:layout_below="@+id/parents"
+        android:background="#ECEFF1">
+        <android.support.v7.widget.DialogTitle
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:text="Education"
+            android:textAlignment="center"
+            android:id="@+id/educationtext"
+            ></android.support.v7.widget.DialogTitle>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/educationtext"
+
+            android:layout_margin="5dp"
+            android:id="@+id/educationEditText"
+            android:padding="10dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/jee"
+        android:layout_below="@+id/education"
+        android:layout_alignParentBottom="true">
+
+    <android.support.v7.widget.DialogTitle
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:text="Score"
+        android:id="@+id/scoretext"
+        android:textAlignment="center"
+        ></android.support.v7.widget.DialogTitle>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/scoretext"
+            android:layout_margin="5dp"
+            android:id="@+id/scoreEditText"
+            android:padding="10dp" />
+    </RelativeLayout>
+</RelativeLayout>
